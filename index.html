@@ -59,13 +59,13 @@ canvas {
 
      // Initialize Rive
      riveInstance = new rive.Rive({
-        src: 'safaricom_runtime_ads.riv', // Ensure this file name is correct
+        src: 'basigo.riv', // Ensure this file name is correct
         canvas: document.getElementById('riveCanvas'),
         autoplay: true,
-        artboard: 'SRA', // Ensure this artboard name is correct
-        stateMachines: 'SM1', // Ensure this state machine name is correct
+        artboard: 'Basigo', // Ensure this artboard name is correct
+        stateMachines: 'State Machine 1', // Ensure this state machine name is correct
         onLoad: () => {
-            const inputs = riveInstance.stateMachineInputs('SM1'); // Ensure this state machine name is correct
+            const inputs = riveInstance.stateMachineInputs('State Machine 1'); // Ensure this state machine name is correct
            // widthNumInput = inputs.find(i => i.name === 'width_num'); // Ensure this input name is correct
             riveInstance.resizeDrawingSurfaceToCanvas();
 
