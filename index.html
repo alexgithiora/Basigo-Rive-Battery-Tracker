@@ -66,10 +66,13 @@ canvas {
         stateMachines: 'State Machine 1', // Ensure this state machine name is correct
         onLoad: () => {
 
-            const viewModel = rive.viewModelByName("ViewModel1");
+            const viewModel = rive.viewModelByName("View Model 1");
 
             // Bind to the ViewModel
             const instance = viewModel.createInstance();
+
+            // Get a number property
+            const scoreProp = instance.numberProperty("Pos X_num");
             
             const inputs = riveInstance.stateMachineInputs('State Machine 1'); // Ensure this state machine name is correct
            // widthNumInput = inputs.find(i => i.name === 'width_num'); // Ensure this input name is correct
